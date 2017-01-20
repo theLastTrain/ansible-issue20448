@@ -1,0 +1,15 @@
+---
+# == File: main.yml
+#
+# Testcase for role `fail2ban`
+#
+# === Params
+#
+# === Variables
+#
+# === Usage
+#
+- name: Test suit
+  hosts: localhost
+  roles:
+    - role: ../../fail2ban

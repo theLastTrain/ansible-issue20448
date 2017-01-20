@@ -1,0 +1,7 @@
+---
+# == File: target.yml
+#
+# Define vars shared by the whole group
+#
+ansible_connection: 'local'
+ansible_user: 'nutstore'

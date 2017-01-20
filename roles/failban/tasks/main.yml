@@ -1,0 +1,33 @@
+---
+# == File: main.yml
+#
+# Install fail2ban and config jail file
+#
+# === Params
+#
+# === Variables
+#
+# === Usage
+#
+- name: Install package `fail2ban`
+  package:
+    name: fail2ban
+    state: present
+
+- name: Ensure fail2ban path exists
+  file:
+    dest: /etc/fail2ban
+    state: directory
+    owner: root
+    group: root
+
+- name: Copy jail.local
+  copy:
+    src: jail.local
+    dest: /etc/fail2ban/jail.local
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Restart service fail2ban
+  service: name=fail2ban state=restarted

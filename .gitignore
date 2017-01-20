@@ -1,0 +1,20 @@
+**.py[cod]
+
+# IDE
+**.pydevproject
+**.project
+.idea/**
+
+# OS
+**.DS_Store
+
+# temp
+/test*
+
+# others
+.settings/**
+**.orig
+**.swp
+build/**
+**.iml
+**~
